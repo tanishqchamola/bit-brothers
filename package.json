@@ -1,0 +1,19 @@
+{
+  "name": "bitbrothers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "author": "Tanishq Chamola",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.14"
+  }
+}

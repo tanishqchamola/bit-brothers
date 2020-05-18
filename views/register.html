@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form action="/api/users" method="POST">
+        
+        <input type="text" name="id" placeholder="id">
+        <input type="text" name="name" placeholder="name">
+        <input type="text" name="department" placeholder="department">
+        <input type="text" name="sem" placeholder="sem">
+
+        <button type="submit">Register</button>
+
+    </form>
+    <hr>
+    <form action="/api/update" method="POST">
+
+        <input type="text" name="newid" placeholder="id">
+        <input type="text" name="newname" placeholder="new name">
+        <input type="text" name="newdepartment" placeholder="new department">
+        <input type="text" name="newsem" placeholder="new sem">
+
+        <button type="submit">Update</button>
+
+    </form>
+</body>
+</html>
