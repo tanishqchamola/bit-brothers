@@ -9,10 +9,11 @@ mongoose.connect(db, {useNewUrlParser: true, useUnifiedTopology: true})
     .then(() => console.log("MongoDB Connected..."))
     .catch( (err) => console.log(err))
 
-//Bodyparser
 app.use(express.urlencoded({
     extended: false
 }));
+
+app.use(express.json());
 
 app.use('/', require('./routes/index'));
 app.use('/api', require('./routes/api'));

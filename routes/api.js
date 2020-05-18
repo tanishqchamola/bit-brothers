@@ -9,7 +9,6 @@ router.get('/users', (req, res) => {
         .then(function (users) {
             res.json(users);
         });
-
 });
 
 // Get new user via JSON FormData
@@ -37,7 +36,7 @@ router.post('/users', (req, res) => {
     
 });
 
-// Get user with id 1
+// Get user with id
 router.get('/users/:id', (req, res) => {
 
     const id = req.params.id;
